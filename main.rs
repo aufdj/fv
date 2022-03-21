@@ -342,6 +342,7 @@ fn main() {
     let mut index = vec![0u32; HSIZE];
     let csd_max = csd * 32767.0;
     let rec_max = 1.0 / 32767.0;
+    fastrand::seed(1);
 
     // Do 4 passes through file, first finding 1 byte matches (black), 
     // then 2 (red), then 4 (green), then 8 (blue).
